@@ -6,19 +6,22 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:35:16 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:18:14 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 14:54:25 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Compares two blocks of memory byte-by-byte.
  * 
- * @param str1 
- * @param str2 
- * @param n 
- * @return int 
+ * @param str1 - First memory block.
+ * @param str2 - Second memory block.
+ * @param n - Number of bytes to compare.
+ * @return int - An integer less than, equal to, or greater than zero:
+ * 			< 0 if s1 is lexicographically smaller than s2
+ * 			= 0 if they are equal
+ * 			> 0 if s1 is lexicographically greater than s2
  */
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {

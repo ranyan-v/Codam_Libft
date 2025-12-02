@@ -6,17 +6,18 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 13:23:16 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:23:40 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 16:03:06 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Calculates the length of a string (excluding the null terminator).
  * 
- * @param str 
- * @return size_t 
+ * @param str - The string whose length is to be measured.
+ * @return size_t - The number of characters in the string
+ * 					before the null terminator.
  */
 size_t	ft_strlen(const char *str)
 {

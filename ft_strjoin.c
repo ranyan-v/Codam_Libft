@@ -6,18 +6,19 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 17:49:55 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:22:40 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 16:19:16 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Creates a new string by concatenating two strings.
  * 
- * @param s1 
- * @param s2 
- * @return char* 
+ * @param s1 - First string.
+ * @param s2 - Second string.
+ * @return char* - A newly allocated string containing s1 followed by s2,
+ * 					or NULL if allocation fails.
  */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -26,7 +27,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*str;
 
 	if (!s1 || !s2)
-		return (0);
+		return (NULL);
 	str = (char *)malloc (ft_strlen((char *)s1) + ft_strlen((char *)s2) + 1);
 	if (!str)
 		return (0);

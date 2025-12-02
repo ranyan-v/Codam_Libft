@@ -6,18 +6,20 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 18:24:43 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:39:44 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 16:12:55 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Allocates memory for an array of elements
+ * 			and sets all allocated bytes to zero.
  * 
- * @param count 
- * @param size 
- * @return void* 
+ * @param count - Number of elements to allocate.
+ * @param size - Size of each element.
+ * @return void* - Pointer to the allocated zero-initialized memory,
+ * 				or NULL if allocation fails or if the multiplication overflows.
  */
 void	*ft_calloc(size_t count, size_t size)
 {

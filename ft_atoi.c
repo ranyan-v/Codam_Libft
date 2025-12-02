@@ -6,17 +6,21 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 15:41:01 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:17:54 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 16:12:15 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Converts a string to an integer.
+ * 			Skips leading whitespace, processes an optional sign,
+ * 			and converts consecutive digits to a number.
  * 
- * @param nptr 
- * @return int 
+ * @param nptr - The string to be converted.
+ * @return int - The integer value represented by the string.
+ * 				Behavior is undefined on overflow or underflow 
+ * 				(mimics standard atoi).
  */
 int	ft_atoi(const char *nptr)
 {

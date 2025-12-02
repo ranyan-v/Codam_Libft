@@ -6,19 +6,20 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:09:03 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:18:20 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 14:51:19 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Copies a block of memory from source to destination.
+ * 			Safely handles overlapping memory areas by choosing copy direction.
  * 
- * @param dest 
- * @param src 
- * @param len 
- * @return void* 
+ * @param dest - Destination memory area.
+ * @param src - Source memory area.
+ * @param len - Number of bytes to move.
+ * @return void* - Pointer to the destination memory area dest.
  */
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
@@ -26,7 +27,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	unsigned char	*sptr;
 
 	if (!dest && !src)
-		return (0);
+		return (NULL);
 	dptr = (unsigned char *)dest;
 	sptr = (unsigned char *)src;
 	if (dptr == sptr || len == 0)

@@ -6,17 +6,17 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 12:58:57 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:26:15 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 17:45:29 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Checks whether the given character is a numeric digit.
  * 
- * @param c 
- * @return int 
+ * @param c - The character to check.
+ * @return int - 1 if c is a digit (0–9), otherwise 0.
  */
 int	ft_isdigit(int c)
 {

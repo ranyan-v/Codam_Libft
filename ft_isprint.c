@@ -6,17 +6,17 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 13:11:12 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:26:21 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 17:51:17 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Checks whether the given character is printable, including the space.
  * 
- * @param c 
- * @return int 
+ * @param c - The character to check.
+ * @return int - 1 if c is a printable ASCII character (32–126), otherwise 0.
  */
 int	ft_isprint(int c)
 {

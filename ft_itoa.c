@@ -6,20 +6,12 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 14:34:43 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:18:07 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 17:39:18 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief 
- * 
- * @param str 
- * @param len 
- * @param nbr 
- * @return char* 
- */
 char	*ft_itoa_putstr(char *str, int len, long nbr)
 {
 	int		i;
@@ -43,10 +35,11 @@ char	*ft_itoa_putstr(char *str, int len, long nbr)
 }
 
 /**
- * @brief 
+ * @brief - Converts an integer into a newly allocated string representation.
  * 
- * @param n 
- * @return char* 
+ * @param n - The integer to convert.
+ * @return char* - A newly allocated string representing the integer,
+ * 					or NULL if allocation fails.
  */
 char	*ft_itoa(int n)
 {

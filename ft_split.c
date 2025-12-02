@@ -6,19 +6,12 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 14:35:52 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:21:24 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 17:58:31 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief 
- * 
- * @param s 
- * @param c 
- * @return int 
- */
 int	ft_split_count(char const *s, char c)
 {
 	int	count;
@@ -40,13 +33,6 @@ int	ft_split_count(char const *s, char c)
 	return (count);
 }
 
-/**
- * @brief 
- * 
- * @param s 
- * @param c 
- * @return char* 
- */
 char	*ft_split_word(char const *s, char c)
 {
 	int		len;
@@ -69,12 +55,6 @@ char	*ft_split_word(char const *s, char c)
 	return (word);
 }
 
-/**
- * @brief 
- * 
- * @param output 
- * @param loc 
- */
 void	ft_split_free(char **output, int loc)
 {
 	while (loc > 0)
@@ -85,14 +65,6 @@ void	ft_split_free(char **output, int loc)
 	free(output);
 }
 
-/**
- * @brief 
- * 
- * @param s 
- * @param c 
- * @param output 
- * @return char** 
- */
 char	**ft_split_fill(char const *s, char c, char **output)
 {
 	int	loc;
@@ -119,11 +91,15 @@ char	**ft_split_fill(char const *s, char c, char **output)
 }
 
 /**
- * @brief 
+ * @brief - Splits a string into an array of substrings
+ * 			using a specific delimiter character.
  * 
- * @param s 
- * @param c 
- * @return char** 
+ * @param s - The string to split.
+ * @param c - The delimiter character.
+ * @return char** - A NULL-terminated array of newly allocated substrings,
+ * 					or NULL if allocation fails at any point.
+ * 					(Partial allocations must be freed by the caller
+ * 					 in case of failure.)
  */
 char	**ft_split(char const *s, char c)
 {

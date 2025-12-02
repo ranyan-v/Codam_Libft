@@ -6,17 +6,17 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 13:05:13 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:25:56 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 17:46:44 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Checks whether the given character is alphanumeric (letter or digit).
  * 
- * @param c 
- * @return int 
+ * @param c - The character to check.
+ * @return int - 1 if c is alphabetic or numeric, otherwise 0.
  */
 int	ft_isalnum(int c)
 {

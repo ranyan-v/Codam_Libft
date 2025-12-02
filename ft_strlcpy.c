@@ -6,19 +6,23 @@
 /*   By: rayan <rayan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:07:14 by rayan             #+#    #+#             */
-/*   Updated: 2025/11/11 19:23:30 by rayan            ###   ########.fr       */
+/*   Updated: 2025/12/02 14:58:38 by rayan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief - Copies a string into a destination buffer, 
+ * 			ensuring null-termination when the buffer size allows.
  * 
- * @param dest 
- * @param src 
- * @param size 
- * @return size_t 
+ * @param dest - Destination buffer.
+ * @param src - Source string.
+ * @param size - Total size of the destination buffer 
+ * 					including space for the null terminator.
+ * @return size_t - The total length of the string src 
+ * 					(not the number of characters copied).
+ * 					Useful for detecting truncation.
  */
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
